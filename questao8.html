@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Utilizando Switch, faça um programa que pergunte em que turno você estuda. Peça para digitar “M” para matutino ou “V” para vespertino ou “N” para noturno Mostre um alerta com a mensagem “Bom dia!” ou “Boa tarde” ou “Boa Noite” ou “Valor inválido”, conforme o caso.*/
+        let turno = prompt('Qual é o seu turno? (M, V ou N)')
+        let mensagem
+        switch (turno) {
+            case 'M':
+                mensagem = 'Bom dia!'
+                break
+            case 'V':
+                mensagem = 'Boa tarde!'
+                break
+            case 'N':
+                mensagem = 'Boa noite!'
+                break
+            default:
+                mensagem = 'Valor inválido.'
+        }
+        alert(mensagem)
+    </script>
+</body>
+</html>

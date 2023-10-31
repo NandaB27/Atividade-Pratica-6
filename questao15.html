@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Uma loja de eletrodomésticos estabeleceu as seguintes modalidades de pagamento para a venda de suas mercadorias:
+        Escreva um algoritmo que armazene o preço de tabela e o número de vezes em que o pagamento será feito. Calcule o valor de cada parcela e o preço total da compra e imprima no console.*/
+
+        let precoTabela = Number(prompt('Insira o preço da tabela:'))
+        let parcelas = Number(prompt('Insira o número de parcelas:'))
+        let avista = precoTabela * 0.025 
+        let juro1 = precoTabela * 0.06
+        let juro2 = precoTabela * 0.13
+        let calculo1 = precoTabela - avista
+        let calculo2 = precoTabela + juro1
+        let calculo3 = precoTabela + juro2
+        if (parcelas == 1) {
+            document.write(`Á vista o valor ficará ${calculo1}`)
+        } else if (parcelas >= 2 && parcelas <= 5) {
+            document.write(`O valor ficará ${precoTabela}`)
+        } else if (parcelas >= 6 && parcelas <= 10) {
+            document.write(`O valor ficará ${calculo2}`)
+        } else if (parcelas >= 11 && parcelas <= 15) {
+            document.write(`O valor ficará ${calculo3}`)
+        }
+    </script>
+</body>
+</html>

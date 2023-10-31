@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Utilizando o IF, ELSE, ELSE IF crie uma estrutura para receber um número de 1 a 7 e imprimir no console o dia da Semana. Para este exercício assumimos que o dia 1 é Domingo, dia 2 é segunda e assim por diante. Caso o número recebido não esteja neste intervalo imprimir “Dia não reconhecido”.*/
+
+        let diadaSemana = parseInt(prompt('Insira o número do respectivo dia da semana: (1 a 7). '))
+        let dia = 0
+
+        // if (diadaSemana == 1) {
+        //     console.log('Hoje é domingo.')
+        // } else if (diadaSemana == 2) {
+        //     console.log('Hoje é segunda.')
+        // } else if (diadaSemana == 3) {
+        //     console.log('Hoje é terça.')
+        // } else if (diadaSemana == 4) {
+        //     console.log('Hoje é quarta.')
+        // } else if (diadaSemana == 5) {
+        //     console.log('Hoje é quinta.')
+        // } else if (diadaSemana == 6) {
+        //     console.log('Hoje é sexta.')
+        // } else if (diadaSemana == 7) {
+        //     console.log('Hoje é sábado.')
+        // } else {
+        //     console.log('Data inválida')
+        // }
+        /*Reescreva o exercício 3, utilizando apenas o SWITCH.*/
+            switch (diadaSemana) {
+                case 1:
+                    dia = 'domingo'
+                    break
+                case 2:
+                    dia = 'segunda'
+                    break
+                case 3:
+                    dia = 'terça'
+                    break
+                case 4:
+                    dia = 'quarta'
+                case 5:
+                    dia = 'quinta'
+                    break
+                case 6:
+                    dia = 'sexta'
+                    break
+                case 7:
+                    dia = 'sábado'
+                    break
+                default:
+                    dia = console.log('A data inserida é inválida.')
+                    break;
+            }
+            console.log(`Hoje é ${dia}`)
+    </script>
+</body>
+</html>
